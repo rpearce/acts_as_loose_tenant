@@ -3,3 +3,1024 @@
 ActsAsLooseTenantTest: test_truth
 ---------------------------------
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.3ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.6ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "users";
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (1.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "tenants" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:47:14 UTC +00:00], ["updated_at", Fri, 13 Dec 2013 18:47:14 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.5ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.6ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "tenants" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:47:33 UTC +00:00], ["updated_at", Fri, 13 Dec 2013 18:47:33 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 18:47:33 UTC +00:00], ["email", "larue@willms.info"], ["updated_at", Fri, 13 Dec 2013 18:47:33 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:47:33 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 18:47:33 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:47:33 UTC +00:00], ["email", "koby.mraz@champlin.com"], ["updated_at", Fri, 13 Dec 2013 18:47:33 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "users";
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.0ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (2.6ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 18:49:07 UTC +00:00], ["email", "chelsey_keeling@skilesroberts.info"], ["updated_at", Fri, 13 Dec 2013 18:49:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.5ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tenants" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:49:07 UTC +00:00], ["updated_at", Fri, 13 Dec 2013 18:49:07 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 18:49:07 UTC +00:00], ["email", "hosea_keeling@kuhn.name"], ["updated_at", Fri, 13 Dec 2013 18:49:07 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:49:07 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 18:49:07 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTenant Load (0.2ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 18:49:34 UTC +00:00], ["email", "melvin@corwin.com"], ["updated_at", Fri, 13 Dec 2013 18:49:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (1.1ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tenants" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:49:34 UTC +00:00], ["updated_at", Fri, 13 Dec 2013 18:49:34 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 18:49:34 UTC +00:00], ["email", "eldridge_lynch@rodriguezkrajcik.org"], ["updated_at", Fri, 13 Dec 2013 18:49:34 UTC +00:00]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:49:34 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 18:49:34 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTenant Load (0.2ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.1ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:50:08 UTC +00:00], ["email", "denis.bradtke@gottlieb.info"], ["updated_at", Fri, 13 Dec 2013 18:50:08 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (2.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (1.5ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tenants" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:50:08 UTC +00:00], ["updated_at", Fri, 13 Dec 2013 18:50:08 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 18:50:08 UTC +00:00], ["email", "ella_hodkiewicz@johnsonmonahan.name"], ["updated_at", Fri, 13 Dec 2013 18:50:08 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:50:08 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 18:50:08 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTenant Load (0.2ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (1.4ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (1.4ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.5ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (2.6ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (1.1ms)[0m  DELETE FROM "tenants";
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00], ["name", "Grady, Howell and Hyatt"], ["updated_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00], ["email", "keon@denesikward.biz"], ["updated_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTenant Load (0.2ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (1.2ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00], ["email", "janea_pollich@jacobi.net"], ["updated_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00], ["name", "Fahey, Johnson and Satterfield"], ["updated_at", Fri, 13 Dec 2013 18:53:59 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.5ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["email", "shania.thompson@douglas.com"], ["updated_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["name", "Koch, Hand and Mann"], ["updated_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.1ms)[0m  rollback transaction
+  [1m[36m (1.1ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["name", "Hermann and Sons"], ["updated_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["email", "donald@rauschuppe.name"], ["updated_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mTenant Load (0.3ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["name", "Larkin, Zemlak and Walsh"], ["updated_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["email", "itzel@dickinson.net"], ["updated_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["name", "Reilly-Mohr"], ["updated_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:01:31 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36mTenant Load (0.1ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.5ms)[0m  DELETE FROM "users";
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.2ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.5ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["name", "Reilly, McKenzie and Hane"], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["email", "tod.kertzmann@dubuque.info"], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTenant Load (0.2ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (2.1ms)[0m  rollback transaction
+  [1m[36m (1.1ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["name", "Weissnat Inc"], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["email", "brant@erdman.biz"], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["name", "Mohr, Rodriguez and Fritsch"], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ?  [["user_id", 1]]
+  [1m[36mTenant Load (0.1ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (1.1ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["name", "Bins-Kirlin"], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["email", "orval_weinat@wymanblock.biz"], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["name", "Howe-Wehner"], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTenantUser Load (0.1ms)[0m  [1mSELECT "tenant_users".* FROM "tenant_users" WHERE "tenant_users"."user_id" = ? AND "tenant_users"."tenant_id" = 1 ORDER BY "tenant_users"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tenant_users" WHERE "tenant_users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "tenant_users"[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["email", "susie_marks@reilly.org"], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00], ["name", "Nitzsche, Nader and Johnson"], ["updated_at", Fri, 13 Dec 2013 19:06:00 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (2.6ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (1.2ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.5ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (2.5ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "tenants";
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["name", "Daugherty, Huel and Shanahan"], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["email", "sofia.wisozk@dibbertjones.org"], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mTenant Load (0.2ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["name", "Gutkowski, Daugherty and Feest"], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["email", "bryana.bauch@cain.info"], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["name", "Maggio, Rowe and Rath"], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36mTenant Load (0.1ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["name", "Abernathy, Schaden and Lesch"], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["email", "kayden@jacobi.net"], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["name", "Torp Inc"], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tenant_users"
+  [1m[36mTenantUser Load (0.1ms)[0m  [1mSELECT "tenant_users".* FROM "tenant_users" WHERE "tenant_users"."user_id" = ? AND "tenant_users"."tenant_id" = 1 ORDER BY "tenant_users"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tenant_users" WHERE "tenant_users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "tenant_users"[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["email", "johathan@blickstehr.biz"], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00], ["name", "Morar-Beatty"], ["updated_at", Fri, 13 Dec 2013 19:06:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.6ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (2.6ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["email", "lennie.will@schaden.info"], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["name", "Ziemann, Schaefer and Kiehn"], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["name", "Waters-Bartell"], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["email", "maximo.bartoletti@durgan.com"], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mTenant Load (0.2ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["name", "Dietrich-Waters"], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["email", "kolby@hauck.net"], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["name", "Strosin-Glover"], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36mTenant Load (0.1ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (1.1ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["name", "Hickle, Schmeler and Block"], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["email", "rollin@donnelly.org"], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["name", "Nicolas-Corwin"], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:07:23 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tenant_users"
+  [1m[36mTenantUser Load (0.1ms)[0m  [1mSELECT "tenant_users".* FROM "tenant_users" WHERE "tenant_users"."user_id" = ? AND "tenant_users"."tenant_id" = 1 ORDER BY "tenant_users"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tenant_users" WHERE "tenant_users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "tenant_users"[0m
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.1ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["name", "Collier Group"], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["email", "gail.macgyver@hopperuel.biz"], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTenant Load (0.2ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (1.1ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["name", "Feest, Koepp and King"], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["email", "nikita@wolff.org"], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["name", "Hermiston, Lebsack and Dickinson"], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ?  [["user_id", 1]]
+  [1m[36mTenant Load (0.1ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["name", "Christiansen, Simonis and Schuster"], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["email", "parker@smith.org"], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["name", "Hoeger-Mayer"], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tenant_users"[0m
+  [1m[35mTenantUser Load (0.1ms)[0m  SELECT "tenant_users".* FROM "tenant_users" WHERE "tenant_users"."user_id" = ? AND "tenant_users"."tenant_id" = 1 ORDER BY "tenant_users"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tenant_users" WHERE "tenant_users"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "tenant_users"
+  [1m[36mTenant Load (0.1ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (1.2ms)[0m  DELETE FROM "tenants";
+  [1m[36m (1.2ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["email", "reese@koch.org"], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00], ["name", "Keeling-Mante"], ["updated_at", Fri, 13 Dec 2013 19:07:32 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (1.6ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.6ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (1.0ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["email", "rachael.pfannerstill@williamsoncummings.com"], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["name", "Wilderman, Prosacco and Wehner"], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (1.2ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (2.0ms)[0m  DELETE FROM "tenants";
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["name", "Hintz Group"], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["email", "demarco@spinka.biz"], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mTenant Load (0.2ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["name", "Abernathy, Kohler and Bauch"], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["email", "gabe@volkman.name"], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["name", "Buckridge, Vandervort and Kuphal"], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36mTenant Load (0.1ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["name", "Murazik, Maggio and Roob"], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["email", "gretchen.blick@okuneva.org"], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["name", "Fahey, Leuschke and Wolff"], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:07:39 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tenant_users"
+  [1m[36mTenantUser Load (0.1ms)[0m  [1mSELECT "tenant_users".* FROM "tenant_users" WHERE "tenant_users"."user_id" = ? AND "tenant_users"."tenant_id" = 1 ORDER BY "tenant_users"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tenant_users" WHERE "tenant_users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "tenant_users"[0m
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.7ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.3ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (1.0ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (2.5ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:01 UTC +00:00], ["name", "Torphy, King and Legros"], ["updated_at", Fri, 13 Dec 2013 19:08:01 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:01 UTC +00:00], ["email", "fannie@hickledenesik.info"], ["updated_at", Fri, 13 Dec 2013 19:08:01 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mTenant Load (0.2ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["name", "Veum-Koch"], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["email", "zita@mueller.biz"], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["name", "Hartmann Inc"], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36mTenant Load (0.1ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["name", "Cormier-Harvey"], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["email", "bella@sawaynhagenes.biz"], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["name", "Runolfsson-Haag"], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tenant_users"
+  [1m[36mTenantUser Load (0.1ms)[0m  [1mSELECT "tenant_users".* FROM "tenant_users" WHERE "tenant_users"."user_id" = ? AND "tenant_users"."tenant_id" = 1 ORDER BY "tenant_users"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "tenant_users" WHERE "tenant_users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "tenant_users"[0m
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["email", "lowell_bergstrom@kuvalis.info"], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00], ["name", "Paucek and Sons"], ["updated_at", Fri, 13 Dec 2013 19:08:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.5ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.3ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'tenant_users';
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'tenants';[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["name", "Pollich LLC"], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["email", "dimitri@nolan.net"], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTenant Load (0.2ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (1.8ms)[0m  rollback transaction
+  [1m[36m (1.1ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.9ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["name", "Hauck and Sons"], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["email", "lenny_donnelly@kohlergreenfelder.biz"], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["name", "Kutch, Goyette and Halvorson"], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ?  [["user_id", 1]]
+  [1m[36mTenant Load (0.1ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["name", "Doyle, Wilkinson and Langworth"], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["email", "rasheed@bradtke.info"], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["name", "Gerhold, O'Connell and Gibson"], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["tenant_id", 2], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tenant_users"[0m
+  [1m[35mTenantUser Load (0.1ms)[0m  SELECT "tenant_users".* FROM "tenant_users" WHERE "tenant_users"."user_id" = ? AND "tenant_users"."tenant_id" = 1 ORDER BY "tenant_users"."id" ASC LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tenant_users" WHERE "tenant_users"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "tenant_users"
+  [1m[36mTenant Load (0.1ms)[0m  [1mSELECT "tenants".* FROM "tenants" INNER JOIN "tenant_users" ON "tenants"."id" = "tenant_users"."tenant_id" WHERE "tenant_users"."user_id" = ? ORDER BY "tenants"."id" ASC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenant_users";
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM "tenants";[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.7ms)[0m  [1mDELETE FROM "users";[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["email", "melba_schuster@okeefewolff.biz"], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tenant_users" ("created_at", "tenant_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["tenant_id", 1], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tenants" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00], ["name", "Rice Group"], ["updated_at", Fri, 13 Dec 2013 19:08:49 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mDELETE FROM "tenant_users";[0m
+  [1m[35m (0.8ms)[0m  DELETE FROM "tenants";
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM "users";[0m
