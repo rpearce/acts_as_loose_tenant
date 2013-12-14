@@ -49,3 +49,12 @@ end
 
 ## Note
 Check out the [ActsAsTenant gem](somelink) for more information on how to utilize ActsAsTenant.
+
+# ToDo
+- Make easier out of the box
+  - generator for join table
+
+- Explicitly declaring the tenant and join table is hacky. Find a way to make this better.
+
+- Optimize queries
+
