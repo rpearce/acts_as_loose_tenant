@@ -1,10 +1,10 @@
 # ActsAsLooseTenant
 Allow for your models to have multiple tenants. (Note: this does not
-acts as a replacement for the [ActsAsTenant gem](somelink) -- it merely extends its
+acts as a replacement for the [ActsAsTenant gem](https://github.com/ErwinM/acts_as_tenant) -- it merely extends its
 functionality).
 
 ## Why This Exists
-[ActsAsTenant](somelink) is a great gem for multitenancy. It scopes
+[ActsAsTenant](https://github.com/ErwinM/acts_as_tenant) is a great gem for multitenancy. It scopes
 queries based on a ```tenant_id``` column which is added to, for
 example, a ```users``` table.
 
@@ -48,7 +48,7 @@ end
 ...and that's it!
 
 ## Note
-Check out the [ActsAsTenant gem](somelink) for more information on how to utilize ActsAsTenant.
+Check out the [ActsAsTenant gem](https://github.com/ErwinM/acts_as_tenant) for more information on how to utilize ActsAsTenant.
 
 # ToDo
 - Make easier out of the box
