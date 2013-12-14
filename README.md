@@ -52,7 +52,7 @@ Check out the [ActsAsTenant gem](somelink) for more information on how to utiliz
 
 # ToDo
 - Make easier out of the box
-  - generator for join table
+  - generator for join table and relationships
 
 - Explicitly declaring the tenant and join table is hacky. Find a way to make this better.
 
