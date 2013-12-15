@@ -3,6 +3,16 @@ Allow for your models to have multiple tenants. (Note: this does not
 acts as a replacement for the [ActsAsTenant gem](https://github.com/ErwinM/acts_as_tenant) -- it merely extends its
 functionality).
 
+## Installation instructions
+This will be released to RubyGems once it has reached a further point,
+so if you want to use it, make sure to include the GitHub repo:
+
+```ruby
+# Gemfile
+
+gem 'acts_as_loose_tenant', github: 'git@github.com:rpearce/acts_as_loose_tenant.git'
+```
+
 ## Why This Exists
 [ActsAsTenant](https://github.com/ErwinM/acts_as_tenant) is a great gem for multitenancy. It scopes
 queries based on a ```tenant_id``` column which is added to, for
