@@ -1,4 +1,6 @@
 # ActsAsLooseTenant
+[![Code Climate](https://codeclimate.com/github/rpearce/acts_as_loose_tenant.png)](https://codeclimate.com/github/rpearce/acts_as_loose_tenant)
+
 Allow for your models to have multiple tenants. (Note: this does not
 acts as a replacement for the [ActsAsTenant gem](https://github.com/ErwinM/acts_as_tenant) -- it merely extends its
 functionality).
